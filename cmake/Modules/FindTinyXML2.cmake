@@ -2,7 +2,7 @@
 # TinyXML2_INCLUDE_DIRS
 # TinyXML2_LIBRARIES
 
-if(TinyXML2_FOUND)
+if(TinyXML2_FOUND AND TINYXML2_LIBRARY)
   message(STATUS "Previously found TinyXML2 via Config file: ${TinyXML2_DIR}")
   return()
 endif()
