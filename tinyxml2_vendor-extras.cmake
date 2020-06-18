@@ -14,6 +14,7 @@
 
 list(INSERT CMAKE_MODULE_PATH 0 "${tinyxml2_vendor_DIR}/Modules")
 
+find_package(TinyXML2)
 if(TinyXML2_FOUND AND NOT TARGET tinyxml2::tinyxml2)
   message(STATUS "TinyXML2 was already found when tinyxml2_vendor was included, adding missing imported target tinyxml2::tinyxml2")
   # TINYXML2_LIBRARY is composed of debug;<path\to\debug.lib>;optimized;<path\to\release.lib>
